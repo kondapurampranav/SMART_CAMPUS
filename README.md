@@ -40,3 +40,6 @@ Open your browser at: **http://127.0.0.1:8000**
 | GET | `/save` | Export records to .txt |
 | GET | `/analysis` | Generate performance charts |
 # SMART_CAMPUS
+
+## LINK
+The project is live: https://smart-campus-6hp2.onrender.com/
