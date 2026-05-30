@@ -48,7 +48,7 @@ def compute_grade(marks: int) -> str:
 
 @app.get("/")
 def home():
-    return FileResponse("templates/index.html")
+    return FileResponse("index.html")
 
 @app.post("/register")
 def register_student(student: StudentIn):
@@ -84,6 +84,14 @@ def save_fee(data: FeeIn):
 @app.get("/records")
 def get_records():
     return students
+
+@app.get("/style.css")
+def serve_css():
+    return FileResponse("style.css")
+
+@app.get("/script.js")
+def serve_js():
+    return FileResponse("script.js")
 
 @app.get("/search/{sid}")
 def search_student(sid: str):
